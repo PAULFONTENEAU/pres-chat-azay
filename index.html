@@ -80,14 +80,22 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
-    .image-section2 {
-      width: 200px;           /* augmente la taille ici */
-      height: auto;           /* garde les proportions */
-      display: flex;
-      justify-content: center;
-      border-radius: 5px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
     }
+
+    .image-section2 {
+  display: flex;                 /* met les images sur la même ligne */
+  justify-content: center;       /* centre horizontalement */
+  gap: 20px;                     /* espace entre les images */
+  margin: 20px 0;
+  }
+
+  .image-section2 img {
+  width: 400px;                  /* taille des images */
+  height: auto;                  /* garde les proportions */
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
   </style>
 </head>
 
