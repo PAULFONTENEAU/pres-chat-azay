@@ -4,93 +4,105 @@
   <meta charset="UTF-8">
   <title>Château d'Azay-le-Rideau</title>
   <style>
+    /* --- RESET ET BASE --- */
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif; /* Police plus moderne */
       line-height: 1.6;
       color: #333;
-      background-color: #f7f7f7;
+      background-color: #f4f4f4;
     }
 
-    /* Section d'accueil */
+    /* --- LE BANDEAU (HERO) --- */
     .hero {
-      background: url('Capture1.png') center/cover no-repeat;
-      height: 55vh;
+      /* IMPORTANT : Couleur de fond de secours (Bleu foncé) si l'image ne charge pas */
+      background-color: #1a4d8f; 
+      /* Votre image par dessus */
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Capture1.png');
+      background-size: cover;
+      background-position: center;
+      height: 60vh; /* Hauteur de 60% de l'écran */
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       color: white;
-      padding: 20px;
     }
 
     .hero h1 {
-      font-size: 3rem;
-      background: rgba(0, 0, 0, 0.45);
+      font-size: 3.5rem;
+      margin: 0;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.7); /* Ombre pour lisibilité */
+      border: 4px solid white; /* Cadre autour du titre */
       padding: 20px 40px;
-      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.3);
     }
 
-    /* Contenu principal */
+    /* --- CONTENU (CARTE BLANCHE) --- */
     .container {
       max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: -50px auto 50px; /* Remonte la carte sur le bandeau */
+      padding: 40px;
       background: white;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      position: relative; /* Nécessaire pour l'effet de superposition */
     }
 
     h2 {
       text-align: center;
-      margin-top: 40px;
       color: #1a4d8f;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 40px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
     }
 
     p {
       font-size: 1.1rem;
       text-align: justify;
+      margin-bottom: 20px;
+      color: #555;
     }
 
+    /* --- IMAGE DANS LE TEXTE --- */
     .image-section {
       text-align: center;
       margin: 30px 0;
     }
 
     .image-section img {
-      max-width: 90%;
-      border-radius: 10px;
-      box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Bandeau d'accueil -->
   <div class="hero">
-    <h1>Projet Château d'Azay-le-Rideau1</h1>
+    <h1>Château d'Azay-le-Rideau</h1>
   </div>
 
-  <!-- Contenu -->
   <div class="container">
     <h2>Présentation du Château</h2>
 
     <div class="image-section">
-      <img src="Capture1.png" alt="Château d'Azay-le-Rideau">
+      <img src="Capture1.png" alt="Vue filaire du château">
     </div>
 
     <p>
       Le château d’Azay-le-Rideau, édifié au XVIᵉ siècle au cœur de la vallée de la Loire,
       est un chef-d’œuvre de l’architecture Renaissance française. Construit sur une île au milieu
       de l’Indre, il se distingue par ses façades élégantes, ses tourelles finement sculptées et son
-      miroir d’eau qui reflète harmonieusement l’édifice. Alliant raffinement italien et tradition
-      française, il est aujourd’hui l’un des châteaux les plus emblématiques et les plus visités du
-      Val de Loire.
+      miroir d’eau qui reflète harmonieusement l’édifice.
     </p>
 
-    <h2>Pourquoi choisir ce château ?</h2>
+    <h2>Pourquoi ce projet ?</h2>
 
     <p>
       Nous avons décidé de travailler sur le château d'Azay-le-Rideau car nous cherchions un bâtiment
@@ -102,5 +114,4 @@
 
 </body>
 </html>
-
 
